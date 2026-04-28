@@ -15,5 +15,6 @@ variable "instance_type" {
 resource "aws_instance" "pkinstance" {
     ami = var.ami
     instance_type = var.instance_type
+    key_name = "my-ec2-key"
   
 }
