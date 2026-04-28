@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-1"
+    region = "ap-south-1"
   
 }
 
@@ -12,7 +12,7 @@ variable "instance_type" {
     description = "This is instance"
   
 }
-resource "aws_instance" "aarvitex" {
+resource "aws_instance" "pkinstance" {
     ami = var.ami
     instance_type = var.instance_type
   
