@@ -21,6 +21,6 @@ resource "aws_key_pair" "my_key" {
 resource "aws_instance" "pkinstance" {
     ami = var.ami
     instance_type = var.instance_type
-    key_name = "my-ec2-key"
+    key_name = aws_key_pair.my_key.key_name
   
 }
